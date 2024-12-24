@@ -1,5 +1,7 @@
 # 2025 Cisco Live Amsterdam -- GO BEYOND
 
+![AWX 101 Session](images/github-banner.png)
+
 Welcome to the repository for “AWX 101: Getting Started in Automation with the Ansible AWX Platform” presented at Cisco Live Amsterdam 2025! This session (Code: DEVNET-1060) is designed to help you take your first steps into automation with AWX, the powerful open-source automation platform built for managing Ansible tasks and workflows.
 
 During this session, we’ll cover the essentials of setting up AWX and dive into practical demonstrations, including:
