@@ -1,4 +1,4 @@
-# 2025 Cisco Live Amsterdam -- GO BEYOND
+# 2025 Cisco Live Amsterdam GO BEYOND
 
 ![AWX 101 Session](images/github-banner.png)
 
