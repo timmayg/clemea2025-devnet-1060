@@ -1,0 +1,23 @@
+---
+- name : Shutdown C9300 LEDs
+  hosts: iosxe
+  connection: netconf
+  gather_facts: no
+
+  tasks:
+    - name: Shutdown the interface LEDs
+      netconf_config:
+        xml: |
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <hw-module>
+                  <switch>
+                    <switch-number>1</switch-number>
+                    <auto-off>
+                      <led/>
+                    </auto-off>
+                  </switch>
+                </hw-module>
+              </native>
+            </config>
+
