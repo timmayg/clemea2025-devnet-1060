@@ -1,5 +1,5 @@
 ---
-- name: Shutdown C9300 LEDs
+- name: Shutdown Cat 9k Switch LEDs
   hosts: iosxe
   connection: netconf
   gather_facts: false
