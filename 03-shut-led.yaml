@@ -1,5 +1,5 @@
 ---
-- name : Shutdown C9300 LEDs
+- name: Shutdown C9300 LEDs
   hosts: iosxe
   connection: netconf
   gather_facts: false
@@ -20,4 +20,4 @@
               </hw-module>
             </native>
           </config>
-          
+ 
