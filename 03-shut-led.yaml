@@ -5,19 +5,20 @@
   gather_facts: false
 
   tasks:
-    - name: Shutdown the interface LEDs
-      ansible.netcommon.netconf_config:
+#    - name: Shutdown the interface LEDs
+    - name: NETCONF RPC
+      netconf_config:
         xml: |
-          <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
-            <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
-              <hw-module>
-                <switch>
-                  <switch-number>1</switch-number>
-                  <auto-off>
-                    <led/>
-                  </auto-off>
-                </switch>
-              </hw-module>
-            </native>
-          </config>
-          
+            <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+              <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+                <hw-module>
+                  <switch>
+                    <switch-number>1</switch-number>
+                    <auto-off>
+                      <led/>
+                    </auto-off>
+                  </switch>
+                </hw-module>
+              </native>
+            </config>
+
