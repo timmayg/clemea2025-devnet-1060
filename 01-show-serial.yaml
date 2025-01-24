@@ -5,6 +5,11 @@
   connection: network_cli
 
   tasks:
+    - name: Set Username and Password Variables
+      set_fact:
+        network_user: "{{ cl_user }}"
+        network_pass: "{{ cl_pass }}"
+
     - name: Get the facts
       cisco.ios.ios_facts:
         gather_subset: all
