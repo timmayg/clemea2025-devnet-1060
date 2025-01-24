@@ -7,8 +7,8 @@
   tasks:
     - name: Set Username and Password Variables
       set_fact:
-        network_user: "{{ cl_user }}"
-        network_pass: "{{ cl_pass }}"
+        ansible_username: "{{ cl_user }}"
+        ansible_password: "{{ cl_pass }}"
 
     - name: Get the facts
       cisco.ios.ios_facts:
