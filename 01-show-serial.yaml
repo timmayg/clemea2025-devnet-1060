@@ -5,11 +5,6 @@
   connection: network_cli
 
   tasks:
-    - name: Set Username and Password Variables
-      set_fact:
-        ansible_username: "{{ cl_user }}"
-        ansible_password: "{{ cl_pass }}"
-
     - name: Get the facts
       cisco.ios.ios_facts:
         gather_subset: all
