@@ -11,24 +11,13 @@
         commands: "hw-module switch 1 auto-off led"
       register: led_output
 
-    - name: Display Command Output
-      ansible.builtin.debug:
-        var: led_output.stdout
-
     - name: Shutdown Unused SFP Electronics
       cisco.ios.ios_config:
         commands: "hw-module switch 1 auto-off optics"
       register: led_output
 
-    - name: Display Command Output
-      ansible.builtin.debug:
-        var: led_output.stdout
-
-
-
     - name: Timmay HARD STOP this Playbook
-      meta: end_play
-
+      ansible.builtin.meta: end_play
 
 
 
