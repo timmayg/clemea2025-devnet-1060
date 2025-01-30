@@ -6,9 +6,9 @@ Welcome to the repository for “AWX 101: Getting Started in Automation with the
 
 During this session, we’ll cover the we will learn some advanced AWX topics like:
 
-	•	Building an Inventory: Learn how to define and manage your infrastructure resources in AWX.
-	•	Creating a GitHub-Based Project: Discover how to integrate AWX with source control for seamless automation workflows.
-	•	Running Playbooks: Execute Ansible playbooks to configure, deploy, and manage your infrastructure.
+•	Building an Inventory: Learn how to define and manage your infrastructure resources in AWX.
+•	Creating a GitHub-Based Project: Discover how to integrate AWX with source control for seamless automation workflows.
+•	Running Playbooks: Execute Ansible playbooks to configure, deploy, and manage your infrastructure.
 
 This repository contains the resources, examples, and playbooks used during the session. Feel free to clone or fork the repository to follow along during the presentation or revisit the materials afterward. Whether you’re just starting your automation journey or looking to enhance your skills, this session provides the foundational knowledge needed to leverage AWX effectively in your environment.
 
