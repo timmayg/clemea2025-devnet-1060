@@ -46,10 +46,10 @@
                 <aaa>
                   <common-criteria xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-aaa">
                     <policy>COMMON-POLICY</policy>
+                    <upper-case>1</upper-case>
                     <lower-case>1</lower-case>
                     <numeric-count>1</numeric-count>
                     <special-case>1</special-case>
-                    <upper-case>1</upper-case>
                     <min-length>12</min-length>
                     <max-length>127</max-length>
                     <character-repetition>2</character-repetition>
@@ -59,3 +59,4 @@
                 </aaa>
               </native>
             </config>
+            
