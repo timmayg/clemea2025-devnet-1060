@@ -6,6 +6,32 @@
 
   tasks:
     - name: Shutdown Cat 9k Interface LEDs
+      cisco.ios.ios_command:
+        commands: "hw-module switch 1 auto-off led"
+      register: led_output
+
+    - name: Display Command Output
+      ansible.builtin.debug:
+        var: led_output.stdout
+
+    - name: Shutdown Unused SFP Electronics
+      cisco.ios.ios_command:
+        commands: "hw-module switch 1 auto-off optics"
+      register: led_output
+
+    - name: Display Command Output
+      ansible.builtin.debug:
+        var: led_output.stdout
+
+
+
+    - name: Timmay HARD STOP this Playbook
+      meta: end_play
+
+
+
+
+    - name: Shutdown Cat 9k Interface LEDs
       netconf_config:
         xml: |
             <config xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
