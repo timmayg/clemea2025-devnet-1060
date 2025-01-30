@@ -1,12 +1,13 @@
 ---
 - name: Shutdown Cat 9k Switch LEDs
   hosts: iosxe
-  connection: netconf
+#  connection: netconf
+  connection: network_cli
   gather_facts: false
 
   tasks:
     - name: Shutdown Cat 9k Interface LEDs
-      cisco.ios.ios_command:
+      cisco.ios.ios_config:
         commands: "hw-module switch 1 auto-off led"
       register: led_output
 
@@ -15,7 +16,7 @@
         var: led_output.stdout
 
     - name: Shutdown Unused SFP Electronics
-      cisco.ios.ios_command:
+      cisco.ios.ios_config:
         commands: "hw-module switch 1 auto-off optics"
       register: led_output
 
