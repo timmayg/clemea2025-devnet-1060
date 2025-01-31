@@ -12,5 +12,4 @@
     - name: Display model and serial number
       ansible.builtin.debug:
         msg: "Switch Host Name is {{ ansible_net_hostname }}.
-              Serial number is {{ ansible_net_serialnum }}.
-              Stack serial numbers are {{ansible_net_stacked_serialnums }}."
+              Serial number is {{ ansible_net_serialnum }}."
