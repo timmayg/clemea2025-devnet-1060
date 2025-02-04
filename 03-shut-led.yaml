@@ -1,5 +1,5 @@
 ---
-- name: Shutdown Cat 9k Switch LEDs
+- name: Shutdown Cat 9k Switch LEDs (CLI lines version)
   hosts: iosxe
 #  connection: netconf
   connection: network_cli
